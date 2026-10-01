@@ -1,0 +1,26 @@
+{
+  "name": "agentic-student-success-intelligence-platform",
+  "version": "1.0.0",
+  "description": "Enterprise AI-Powered Student Success Ecosystem for Colleges & Universities (ASSIP)",
+  "scripts": {
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "build": "cd client && npm run build && cd ../server && npm run build",
+    "start": "cd server && npm start"
+  },
+  "keywords": [
+    "education",
+    "ai-agents",
+    "student-success",
+    "early-warning",
+    "analytics",
+    "edtech"
+  ],
+  "author": "Google DeepMind Advanced Agentic Coding",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^10.0.5"
+  }
+}
